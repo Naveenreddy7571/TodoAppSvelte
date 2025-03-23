@@ -79,7 +79,7 @@
 
   async function deleteTodo(id) {
     try {
-      await axios.delete(`${baseUrl}/todos/${id}`); 
+      await axios.delete(`${baseUrl}/todo/${id}`); 
       todos = todos.filter((todo) => todo.id !== id);
     } catch (err) {
       error = err.message;
